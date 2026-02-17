@@ -15,7 +15,7 @@ jobs:
 
      - name: list of files 
        run: |
-              cd k8s
+              cd .Github/workflow
               ls 
        shell: bash
 
