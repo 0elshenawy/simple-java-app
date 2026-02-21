@@ -23,7 +23,7 @@ jobs:
               uses: docker/build-push-action@v6
               with:
                 push: true
-                tags: mahmoudabdelatif/gh-actions-js:${{ github.sha }}
+                tags: mahmoudabdelatif/gh-actions-js:${{ github.sha }} 
 
               
             
