@@ -17,13 +17,13 @@ jobs:
             - name: login to dockerhub
               uses: docker/login-action@v3
               with:
-               username: ${{  vars.DOCKERHUB_USERNAME }}
+               username: ${{  secrets.DOCKERHUB_USERNAME }}
                password: ${{ secrets.DOCKERHUB_TOKEN }}
             - name: build and push the image
               uses: docker/build-push-action@v6
               with:
                 push: true
-                tags: mahmoudabdelatif/gh-actions-js:${{ github.sha }} 
+                tags: mahmoudabdelatif/gh-actions-js:${{ github.sha }}
 
               
             
