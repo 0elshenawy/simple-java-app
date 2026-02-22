@@ -17,4 +17,4 @@ jobs:
 
       - name: test the app
         run: "mvn test"
-        shell: bash
+        shell: bash 
